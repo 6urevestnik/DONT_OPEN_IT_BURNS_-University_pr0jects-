@@ -1,16 +1,17 @@
 ﻿/* Программа сложения */
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-main()
+int main(void)
 {
 	int a, b, c;									/* Объявление переменных */
 
-	printf("Введите первое число: \n");				/* инструкция */
+	printf("Enter first number \n");				/* инструкция */
 	scanf("%d", &a);								/* ввод переменной а */
-	printf("Введите второе число: \n");				/* инструкция */
+	printf("Enter second number: \n");				/* инструкция */
 	scanf("%d", &b);								/* ввод переменной б */
 	c = a + b;										/* переменной с присвоить сумму переменных а и б */
-	printf("Ответ: %d\n", c);
+	printf("Answer is: %d\n", c);
 
 	return 0;
 }
