@@ -3,8 +3,8 @@
 
 int main(void)
 {
-	/* 2.3 - a */
-	int c, thisVariable, q766354, number, a;
+	/* 2.3 - a, 2.4 - a */
+	int c, thisVariable, q766354, number, a, x, y, z, result, a1, b1, c1, a2, b2;
 
     /* 2.3 - b, c */
 	printf("Enter integer number: ");
@@ -28,6 +28,29 @@ int main(void)
 
 	/* 2.3 - g */
 	printf("This\n is\n a\n C\n program\n");
+
+	/* 2.4 - b */
+	printf("Enter three numbers \n");
+	scanf("%d%d%d", &x, &y, &z);
+	result = x * y * z;
+	printf("The product is %d\n", result);
+
+	/* 2.9 */
+	printf("Enter two numbers: ");
+	scanf("%d %d", &b1, &c1);
+	a1 = b1 * c1;
+	printf("Zarplata = smeny * stavka: %d\n", a1);
+
+	printf("ENTER TWO NUMBERSZ: ");
+	scanf("%d %d", &a2, &b2);
+	printf("%d\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
+
+	printf("1, 2, 3, 4\n");
+	printf("%d %d %d %d\n", a1, b1, c1, result);
+	printf("1 ");
+	printf("2 ");
+	printf("3 ");
+	printf("4\n");
 
 	return 0;
 }
