@@ -101,17 +101,93 @@ void exercise_2_18()
 	}
 }
 
+void exercise_2_19()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int result = 0;
+
+	printf("Enter three numbers: ");
+	scanf("%d %d %d", &a, &b, &c);
+
+	printf("\nSum is %d\n\n", a + b + c);
+
+	printf("Average is %d\n\n", (a + b + c) / 3);
+
+	printf("Product is %d\n\n", a * b * c);
+
+	/* Smallest */
+	if (a < b < c)
+	{
+		printf("Smallest is %d\n\n", a);
+	}
+
+	else if (a < c < b)
+	{
+		printf("Smallest is %d\n\n", a);
+	}
+
+	else if (c < a < b)
+	{
+		printf("Srnallest is %d\n\n", c);
+	}
+
+	else if (c < b < a)
+	{
+		printf("Smallest is %d\n\n", c);
+	}
+
+	else if (b < a < c)
+	{
+		printf("Smallest is %d\n\n", b);
+	}
+	else if (b < c < a)
+	{
+		printf("Smallest is %d\n\n", b);
+	}
+
+	/* Largest */
+	if (a > b > c)
+	{
+		printf("Largest is %d\n\n", a);
+	}
+
+	else if (a > c > b)
+	{
+		printf("Largest is %d\n\n", a);
+	}
+
+	else if (c > a > b)
+	{
+		printf("Largest is %d\n\n", c);
+	}
+
+	else if (c > b > a)
+	{
+		printf("Largest is %d\n\n", c);
+	}
+
+	else if (b > a > c)
+	{
+		printf("Largest is %d\n\n", b);
+	}
+
+	else if (b > c > a)
+	{
+		printf("Largest is %d\n\n", b);
+	}
+}
 
 int main(void)
 {
-	/* 2.3 - a, 2.4 - a */
-	int x, y, z, a, a1, b1, c, c1, a2, b2, d, e, result, number, q766354, thisVariable;
+	int a, c, a2, b2, result, number;
 
 	printf("ENTER TWO NUMBERSZ: ");
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_9();
+	exercise_2_19();
 
 	return 0;
 }
