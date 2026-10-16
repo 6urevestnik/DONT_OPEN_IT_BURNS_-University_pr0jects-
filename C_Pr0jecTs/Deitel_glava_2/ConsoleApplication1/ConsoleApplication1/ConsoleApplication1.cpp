@@ -1,10 +1,30 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+void exercise_2_18()
+{
+	int a = 0;
+	int b = 0;
+
+	printf("Enter two integers: ");
+	scanf("%d %d", &a, &b);
+
+	if (a > b)
+	{
+		printf("%d is larger", a);
+
+	}
+	else if (b > a)
+	{
+		printf("%d is larger", b);
+	}
+}
+
+
 int main(void)
 {
 	/* 2.3 - a, 2.4 - a */
-	int c, thisVariable, q766354, number, a, x, y, z, result, a1, b1, c1, a2, b2;
+	int x, y, z, a, a1, b1, c, c1, a2, b2, d, e, result, number, q766354, thisVariable;
 
     /* 2.3 - b, c */
 	printf("Enter integer number: ");
@@ -51,6 +71,8 @@ int main(void)
 	printf("2 ");
 	printf("3 ");
 	printf("4\n");
+
+	exercise_2_18();
 
 	return 0;
 }
