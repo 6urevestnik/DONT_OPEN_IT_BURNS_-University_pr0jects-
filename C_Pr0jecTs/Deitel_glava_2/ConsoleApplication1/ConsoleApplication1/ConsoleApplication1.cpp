@@ -1,6 +1,53 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+void exercise_2_3_e_f_g_b()
+{
+	printf("This is a C program.\n\n");
+
+	printf("This is a\n C program.\n\n");
+
+	printf("This\n is\n a\n C\n program.\n\n");
+
+	printf("This\n");
+	printf("is\n");
+	printf("a\n");
+	printf("C\n");
+	printf("program.\n");
+}
+
+
+void exercise_2_3_d()
+{
+
+	int number = 0;
+
+	printf("Enter an integer :");
+	scanf("%d", &number);
+
+	if (number != 7)
+	{
+		printf("The variable number is not equal to 7\n");
+	}
+
+	if (number == 7)
+	{
+		printf("The variable number equal to 7\n");
+	}
+
+}
+
+void exercise_2_13_b_c()
+{
+	int a = 0;
+
+	printf("Enter an integer: ");
+	scanf("%d", &a);
+	printf("Your integer is: %d\n", a);
+
+}
+
+
 void exercise_2_18()
 {
 	int a = 0;
@@ -11,12 +58,12 @@ void exercise_2_18()
 
 	if (a > b)
 	{
-		printf("%d is larger", a);
+		printf("%d is larger\n", a);
 
 	}
 	else if (b > a)
 	{
-		printf("%d is larger", b);
+		printf("%d is larger\n", b);
 	}
 }
 
@@ -25,29 +72,6 @@ int main(void)
 {
 	/* 2.3 - a, 2.4 - a */
 	int x, y, z, a, a1, b1, c, c1, a2, b2, d, e, result, number, q766354, thisVariable;
-
-    /* 2.3 - b, c */
-	printf("Enter integer number: ");
-	scanf("%d", &a);
-	printf("Your integer number is: %d\n", a);
-
-	/* 2.3 - d */
-	printf("Enter var number: ");
-	scanf("%d", &number);
-
-	if (number != 7)
-	{
-		printf("The variable number is not equal to 7.\n");
-	}
-
-	/* 2.3 - e */
-	printf("This is a C program.\n");
-
-	/* 2.3 - f */
-	printf("Tis is a\n C program.\n");
-
-	/* 2.3 - g */
-	printf("This\n is\n a\n C\n program\n");
 
 	/* 2.4 - b */
 	printf("Enter three numbers \n");
