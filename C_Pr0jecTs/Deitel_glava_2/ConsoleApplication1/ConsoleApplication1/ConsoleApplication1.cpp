@@ -117,66 +117,34 @@ void exercise_2_19()
 
 	printf("Product is %d\n\n", a * b * c);
 
+	/* Largest */
+	if (a >= b && a >= c)
+	{
+		printf("Largest is %d\n\n", a);
+	}
+	else if (b >= a && b >= c)
+	{
+		printf("Largest is %d\n\n", b);
+	}
+	else
+	{
+		printf("Largest is %d\n\n", c);
+	}
+
 	/* Smallest */
-	if (a < b < c)
+	if (a <= b && a <= c)
 	{
 		printf("Smallest is %d\n\n", a);
 	}
-
-	else if (a < c < b)
+	else if (b <= a && b <= c)
 	{
-		printf("Smallest is %d\n\n", a);
+		printf("Smallest if %d\n\n", b);
 	}
-
-	else if (c < a < b)
-	{
-		printf("Srnallest is %d\n\n", c);
-	}
-
-	else if (c < b < a)
+	else
 	{
 		printf("Smallest is %d\n\n", c);
 	}
 
-	else if (b < a < c)
-	{
-		printf("Smallest is %d\n\n", b);
-	}
-	else if (b < c < a)
-	{
-		printf("Smallest is %d\n\n", b);
-	}
-
-	/* Largest */
-	if (a > b > c)
-	{
-		printf("Largest is %d\n\n", a);
-	}
-
-	else if (a > c > b)
-	{
-		printf("Largest is %d\n\n", a);
-	}
-
-	else if (c > a > b)
-	{
-		printf("Largest is %d\n\n", c);
-	}
-
-	else if (c > b > a)
-	{
-		printf("Largest is %d\n\n", c);
-	}
-
-	else if (b > a > c)
-	{
-		printf("Largest is %d\n\n", b);
-	}
-
-	else if (b > c > a)
-	{
-		printf("Largest is %d\n\n", b);
-	}
 }
 
 int main(void)
