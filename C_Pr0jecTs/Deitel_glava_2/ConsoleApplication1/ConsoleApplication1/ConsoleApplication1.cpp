@@ -147,6 +147,28 @@ void exercise_2_19()
 
 }
 
+void exercise_2_20()
+{
+	int radius = 0;
+	int diametr = 0;
+	int perimeter = 0;
+	int area = 0;
+	int radius_2 = 0;
+
+	printf("Enter the radius: ");
+	scanf("%f", &radius);
+
+	diametr = 2 * radius;
+	printf("Diametr is %f\n\n", diametr);
+
+	perimeter = 3.14 * diametr;
+	printf("Perimetr is %f\n\n", perimeter);
+
+	radius_2 = radius * radius;
+	area = 3.14 * radius_2;
+	printf("Area is %d\n\n", area);
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -155,7 +177,7 @@ int main(void)
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_19();
+	exercise_2_20();
 
 	return 0;
 }
