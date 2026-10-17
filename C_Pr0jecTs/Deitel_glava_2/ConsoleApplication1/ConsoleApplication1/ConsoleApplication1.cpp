@@ -182,6 +182,62 @@ void exercise_2_21()
 	printf("**********       ******          *           *      \n\n ");
 }
 
+void exercise_2_22()
+{
+	printf("*\n**\n***\n****\n*****\n");
+}
+
+void exercise_2_23()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
+	int e = 0;
+
+	printf("Enter five numbers: ");
+	scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+
+	if (a > b && a > c && a > d && a > e)
+	{
+		printf("Largest is %d", a);
+	}
+	else if (b > a && b > c && b > d && b > e)
+	{
+		printf("Largest is %d", b);
+	}
+	else if (c > a && c > b && c > d && c > e)
+	{
+		printf("Largest is %d", c);
+	}
+	else if (d > a && d > b && d > c && d > e)
+	{
+		printf("Largest is %d", d);
+	}
+	else
+	{
+		printf("Largest is %d", e);
+	}
+}
+
+void exercise_2_24()
+{
+	int a = 0;
+
+	printf("Enter integer: ");
+	scanf("%d", &a);
+	a = a % 2;
+	printf("%d", a);
+	if (a != 0)
+	{
+		printf("Number is odd");
+	}
+	else
+	{
+		printf("Numbers is even");
+	}
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -190,8 +246,7 @@ int main(void)
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_21();
+	exercise_2_24();
 
 	return 0;
 }
-
