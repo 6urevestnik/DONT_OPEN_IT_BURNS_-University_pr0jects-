@@ -238,6 +238,36 @@ void exercise_2_24()
 	}
 }
 
+void exercise_2_25()
+{
+	printf("PPPPPPPP     DDDDDDD           A       \n");
+	printf("P       P    D      D         A A      \n");
+	printf("P       P    D       D       A   A     \n");
+	printf("PPPPPPPPP    D       D      AAAAAAA    \n");
+	printf("P            D       D     A       A   \n");
+	printf("P            D       D     A       A   \n");
+	printf("P            D      D      A       A   \n");
+	printf("P            DDDDDDD       A       A   \n");
+}
+
+void rpd()
+{
+	printf("|===================================================\n");
+	printf("|                                                  |\n");
+	printf("|    RRRRRRR       PPPPPPPP       DDDDDDDD         |\n");
+	printf("|    R      R      P       P      D       D        |\n");
+	printf("|    R       R     P        P     D        D       |\n");
+	printf("|    R      R      P       P      D         D      |\n");
+	printf("|    RRRRRR        PPPPPPPP       D         D      |\n");
+	printf("|    R R           P              D         D      |\n");
+	printf("|    R  R          P              D         D      |\n");
+	printf("|    R   R         P              D        D       |\n");
+	printf("|    R    R        P              D       D        |\n");
+	printf("|    R     R       P              DDDDDDDD         |\n");
+	printf("|                                                  |\n");
+	printf("|==================================================|\n");
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -246,7 +276,8 @@ int main(void)
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_24();
+	exercise_2_25();
+	rpd();
 
 	return 0;
 }
