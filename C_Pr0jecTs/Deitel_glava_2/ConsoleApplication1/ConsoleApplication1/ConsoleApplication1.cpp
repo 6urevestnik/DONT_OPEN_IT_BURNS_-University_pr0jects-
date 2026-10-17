@@ -169,6 +169,19 @@ void exercise_2_20()
 	printf("Area is %.f\n\n", area);
 }
 
+void exercise_2_21()
+{
+	printf("**********       ******          *           *      \n");
+	printf("*        *      *      *        ***         * *     \n");
+	printf("*        *     *        *      *****       *   *    \n");
+	printf("*        *     *        *     *******     *     *   \n");
+	printf("*        *     *        *        *       *       *  \n");
+	printf("*        *     *        *        *        *     *   \n");
+	printf("*        *     *        *        *         *   *    \n");
+	printf("*        *      *      *         *          * *     \n");
+	printf("**********       ******          *           *      \n\n ");
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -177,7 +190,7 @@ int main(void)
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_20();
+	exercise_2_21();
 
 	return 0;
 }
