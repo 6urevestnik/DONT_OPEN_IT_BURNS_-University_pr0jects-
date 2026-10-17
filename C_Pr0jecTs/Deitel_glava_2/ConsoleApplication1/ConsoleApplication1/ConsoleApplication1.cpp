@@ -151,22 +151,22 @@ void exercise_2_20()
 {
 	int radius = 0;
 	int diametr = 0;
-	int perimeter = 0;
-	int area = 0;
+	double perimeter = 0;
+	double area = 0;
 	int radius_2 = 0;
 
 	printf("Enter the radius: ");
-	scanf("%f", &radius);
+	scanf("%d", &radius);
 
 	diametr = 2 * radius;
-	printf("Diametr is %f\n\n", diametr);
+	printf("\nDiametr is %d\n\n", diametr);
 
 	perimeter = 3.14 * diametr;
-	printf("Perimetr is %f\n\n", perimeter);
+	printf("Perimetr is %.f\n\n", perimeter);
 
 	radius_2 = radius * radius;
 	area = 3.14 * radius_2;
-	printf("Area is %d\n\n", area);
+	printf("Area is %.f\n\n", area);
 }
 
 int main(void)
@@ -175,7 +175,7 @@ int main(void)
 
 	printf("ENTER TWO NUMBERSZ: ");
 	scanf("%d %d", &a2, &b2);
-	printf("%d\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
+	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
 	exercise_2_20();
 
