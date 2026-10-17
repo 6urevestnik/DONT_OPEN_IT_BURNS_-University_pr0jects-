@@ -283,6 +283,24 @@ void exercise_2_27()
 
 }
 
+void exercise_2_26()
+{
+	int a = 0;
+	int b = 0;
+
+	printf("Enter two numbers: ");
+	scanf("%d %d", &a, &b);
+
+	if (a % b == 0)
+	{
+		printf("Number %d is multiple of number %d", a, b);
+	}
+	else
+	{
+		printf("Number %d is not multiple of number %d", a, b);
+	}
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -291,9 +309,7 @@ int main(void)
 	scanf("%d %d", &a2, &b2);
 	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
 
-	exercise_2_25();
-	rpd();
-	exercise_2_27();
+	exercise_2_26();
 
 	return 0;
 }
