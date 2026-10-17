@@ -268,6 +268,21 @@ void rpd()
 	printf("|==================================================|\n");
 }
 
+void exercise_2_27()
+{
+	printf("\n\n* * * * * * * * \n");
+	printf(" * * * * * * * * \n");
+	printf("* * * * * * * * \n");
+	printf(" * * * * * * * * \n");
+	printf("* * * * * * * * \n");
+	printf(" * * * * * * * * \n");
+	printf("* * * * * * * * \n");
+	printf(" * * * * * * * * \n\n\n");
+
+	printf("* * * * * * * *\n * * * * * * * * \n* * * * * * * * \n * * * * * * * *\n* * * * * * * * \n * * * * * * * * \n* * * * * * * * \n * * * * * * * *\n");
+
+}
+
 int main(void)
 {
 	int a, c, a2, b2, result, number;
@@ -278,6 +293,7 @@ int main(void)
 
 	exercise_2_25();
 	rpd();
+	exercise_2_27();
 
 	return 0;
 }
