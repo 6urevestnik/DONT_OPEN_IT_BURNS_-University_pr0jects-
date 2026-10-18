@@ -301,15 +301,19 @@ void exercise_2_26()
 	}
 }
 
+void exercise_2_29()
+{
+	printf("%d", 'A');
+}
+
 int main(void)
 {
-	int a, c, a2, b2, result, number;
+	int a, b, c, result, number;
 
 	printf("ENTER TWO NUMBERSZ: ");
-	scanf("%d %d", &a2, &b2);
-	printf("%d\n\n", (a2 * b2 * (a2 + (b2 * a2 / (a2)))));
+	printf("NO\n\n");
 
-	exercise_2_26();
+	exercise_2_29();
 
 	return 0;
 }
