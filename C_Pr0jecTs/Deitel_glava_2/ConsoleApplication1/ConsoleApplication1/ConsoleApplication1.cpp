@@ -319,6 +319,18 @@ void exercise_2_29()
 	printf("space - %d\n", ' ');
 }
 
+void exercise_2_30()
+{
+
+	char numbers[6];
+	
+	printf("Enter a five-digit number: ");
+	scanf("%s", numbers);
+
+	printf("%c   %c   %c   %c   %c", numbers[0], numbers[1], numbers[2], numbers[3], numbers[4]);
+
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -326,7 +338,7 @@ int main(void)
 	printf("ENTER TWO NUMBERSZ: ");
 	printf("NO\n\n");
 
-	exercise_2_29();
+	exercise_2_30();
 
 	return 0;
 }
