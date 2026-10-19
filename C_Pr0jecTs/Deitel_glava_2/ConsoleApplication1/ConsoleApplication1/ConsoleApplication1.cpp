@@ -331,6 +331,42 @@ void exercise_2_30()
 
 }
 
+void exercise_2_31()
+{
+	int a = 1;
+	int b = 2;
+	int c = 3;
+	int d = 4;
+	int e = 5;
+	int f = 6;
+	int g = 7;
+	int h = 8;
+	int i = 9;
+	int j = 10;
+
+	printf("|========|========|===========|\n");
+	printf("| Number | Square | Cube      |\n");
+	printf("|========|========|===========|\n");
+	printf("| %d      | %d      | %d         |\n", a, a * a, a * a * a);
+	printf("| %d      | %d      | %d         |\n", b, b * b, b * b * b);
+	printf("| %d      | %d      | %d        |\n", c, c * c, c * c * c);
+	printf("| %d      | %d     | %d        |\n", d, d * d, d * d * d);
+	printf("| %d      | %d     | %d       |\n", e, e * e, e * e * e);
+	printf("| %d      | %d     | %d       |\n", f, f * f, f * f * f);
+	printf("| %d      | %d     | %d       |\n", g, g * g, g * g * g);
+	printf("| %d      | %d     | %d       |\n", h, h * h, h * h * h);
+	printf("| %d      | %d     | %d       |\n", i, i * i, i * i * i);
+	printf("| %d     | %d    | %d      |\n", j, j * j, j * j * j);
+	printf("|=======|=========|===========|");
+
+
+
+	printf("in progress...");
+	printf("stay calm fucker!");
+
+	
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -338,7 +374,7 @@ int main(void)
 	printf("ENTER TWO NUMBERSZ: ");
 	printf("NO\n\n");
 
-	exercise_2_30();
+	exercise_2_31();
 
 	return 0;
 }
