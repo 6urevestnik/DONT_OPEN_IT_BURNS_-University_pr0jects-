@@ -390,6 +390,17 @@ void glava3_1ex()
 		printf("F\n");
 }
 
+void empty_operator()
+{
+	int a = 1;
+
+	while (a++ < 10);
+	{
+		;
+	}
+	printf("%d", a);
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -401,7 +412,7 @@ int main(void)
 
 	printf("\n\n\n");
 
-	glava3_1ex();
+	empty_operator();
 
 	return 0;
 }
