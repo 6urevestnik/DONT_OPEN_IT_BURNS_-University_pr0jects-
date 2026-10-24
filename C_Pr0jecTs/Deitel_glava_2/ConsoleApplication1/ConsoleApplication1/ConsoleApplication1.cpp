@@ -359,12 +359,35 @@ void exercise_2_31()
 	printf("| %d     | %d    | %d      |\n", j, j * j, j * j * j);
 	printf("|=======|=========|===========|");
 
-
-
-	printf("in progress...");
+	printf("\nin progress...\n");
 	printf("stay calm fucker!");
+}
 
-	
+void glava3_1ex()
+{
+	int a;
+
+	printf("Enter number: ");
+	scanf("%d", &a);
+
+	if (a > 90)
+	{
+		printf("A\n");
+	}
+	else if (a > 80)
+	{
+		printf("B\n");
+	}
+	else if (a > 70)
+	{
+		printf("C\n");
+	}
+	else if (a > 60)
+	{
+		printf("D\n");
+	}
+	else
+		printf("F\n");
 }
 
 int main(void)
@@ -375,6 +398,10 @@ int main(void)
 	printf("NO\n\n");
 
 	exercise_2_31();
+
+	printf("\n\n\n");
+
+	glava3_1ex();
 
 	return 0;
 }
