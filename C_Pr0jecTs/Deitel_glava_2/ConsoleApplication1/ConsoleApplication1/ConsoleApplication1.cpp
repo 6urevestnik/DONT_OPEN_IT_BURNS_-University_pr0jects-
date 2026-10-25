@@ -480,14 +480,14 @@ void glava3_5ex()
 
 void glava3_6ex()
 {
-	int counter = 0;
-	int counter1 = 0;
-	int counter2 = 0;
+	int students = 0;
+	int successfully = 0;
+	int failed = 0;
 	int result;
 
 	printf("Enter 1 - if exam completed, or enter 2 - if exam not completed.\n\n");
 
-	while (counter < 10)
+	while (students < 10)
 	{
 		printf("Enter results: ");
 		scanf("%d", &result);
@@ -495,21 +495,21 @@ void glava3_6ex()
 		/* Экзамен сдан = 1 */
 		if (result == 1)
 		{
-			counter1++;
+			successfully++;
 		}
 
 		/* Экзамен не сдан = 2 */
 		else if (result == 2)
 		{
-			counter2++;
+			failed++;
 		}
 		
-		counter++;
-
+		students++;
+		
 	}
-	printf("%d students passed exam\n%d students didnt pass the exam\n", counter1, counter2);
+	printf("%d students passed exam\n%d students didnt pass the exam\n", successfully, failed);
 
-	if (counter1 > 8)
+	if (successfully > 8)
 	{
 		printf("Increase the price for the course");
 	}
