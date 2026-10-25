@@ -409,7 +409,7 @@ void glava3_2ex()
 	while (product <= 1000)
 	{
 		printf("| %d | %d |\n", count1, product);
-		count1 += 1;
+		count1++;
 		product *= 2;
 	}
 }
