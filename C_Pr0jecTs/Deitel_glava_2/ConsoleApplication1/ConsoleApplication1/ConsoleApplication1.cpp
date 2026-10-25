@@ -431,20 +431,19 @@ void glava3_3ex()
 
 void glava3_4ex()
 {
-	int a;
-	int b = 0;
-	int counter = 1;
+	int grade;
+	int total = 0;
+	int counter = 0;
 
-	printf("Enter numbers: \n");
-
-	while (counter <= 10)
+	while (counter < 10)
 	{
-		scanf("%d", &a);
-		b += a;
+		printf("Enter grade: ");
+		scanf("%d", &grade);
+		b += grade;
 		counter++;
 	}
-	printf("Counter is: %d\n", counter - 1);
-	printf("Middle arifmetic is: %d", b / counter);
+	printf("Counter is: %d\n", counter);
+	printf("Class average is: %d", total / counter);
 
 }
 
