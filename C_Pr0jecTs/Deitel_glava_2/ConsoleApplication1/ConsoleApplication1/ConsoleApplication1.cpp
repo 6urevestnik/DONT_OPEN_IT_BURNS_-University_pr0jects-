@@ -401,6 +401,19 @@ void empty_operator()
 	printf("%d", a);
 }
 
+void glava3_2ex()
+{
+	int product = 2;
+	int count1 = 1;
+
+	while (product <= 1000)
+	{
+		printf("| %d | %d |\n", count1, product);
+		count1 += 1;
+		product *= 2;
+	}
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -412,7 +425,7 @@ int main(void)
 
 	printf("\n\n\n");
 
-	empty_operator();
+	glava3_2ex();
 
 	return 0;
 }
