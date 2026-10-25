@@ -447,6 +447,26 @@ void glava3_4ex()
 
 }
 
+void glava3_5ex()
+{
+	int grade = 0;
+	int total = 0;
+	int counter = 0;
+
+	while (grade != -1)
+	{
+		printf("Enter grade: ");
+		scanf("%d", &grade);
+		if (grade != -1)
+		{
+			total += grade;
+			counter++;
+		}
+	}
+	printf("\nCounter is: %d\nTotal is: %d\n", counter, total);
+	printf("Average is: %d\n\n", total / counter);
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -455,7 +475,7 @@ int main(void)
 
 	printf("\n\n\n");
 
-	glava3_4ex();
+	glava3_5ex();
 
 	return 0;
 }
