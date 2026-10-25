@@ -478,6 +478,44 @@ void glava3_5ex()
 
 }
 
+void glava3_6ex()
+{
+	int counter = 0;
+	int counter1 = 0;
+	int counter2 = 0;
+	int result;
+
+	printf("Enter 1 - if exam completed, or enter 2 - if exam not completed.\n\n");
+
+	while (counter < 10)
+	{
+		printf("Enter results: ");
+		scanf("%d", &result);
+
+		/* Экзамен сдан = 1 */
+		if (result == 1)
+		{
+			counter1++;
+		}
+
+		/* Экзамен не сдан = 2 */
+		else if (result == 2)
+		{
+			counter2++;
+		}
+		
+		counter++;
+
+	}
+	printf("%d students passed exam\n%d students didnt pass the exam\n", counter1, counter2);
+
+	if (counter1 > 8)
+	{
+		printf("Increase the price for the course");
+	}
+
+}
+
 int main(void)
 {
 	float average;
@@ -509,6 +547,8 @@ int main(void)
 	{
 		printf("No grades were entered\n");
 	}
+
+	glava3_6ex();
 
 	return 0;
 }
