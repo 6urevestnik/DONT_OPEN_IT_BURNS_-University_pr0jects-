@@ -439,7 +439,7 @@ void glava3_4ex()
 	{
 		printf("Enter grade: ");
 		scanf("%d", &grade);
-		b += grade;
+		total += grade;
 		counter++;
 	}
 	printf("Counter is: %d\n", counter);
