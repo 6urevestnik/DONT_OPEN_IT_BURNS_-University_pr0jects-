@@ -480,13 +480,35 @@ void glava3_5ex()
 
 int main(void)
 {
-	int a, b, c, result, number;
+	float average;
+	int counter, grade, total;
 
-	exercise_2_31();
+	/* Этап инициализации */
+	total = 0;
+	counter = 0;
 
-	printf("\n\n\n");
+	/* Этап обработки */
+	printf("Enter grade, -1 to end: ");
+	scanf("%d", &grade);
 
-	glava3_5ex();
+	while (grade != -1)
+	{
+		total = total + grade;
+		counter = counter + 1;
+		printf("Enter grade, -1 to end: ");
+		scanf("%d", &grade);
+	}
+
+	/* Этап завершения */
+	if (counter != 0)
+	{
+		average = (float)total / counter;
+		printf("Class average is %.2f", average);
+	}
+	else
+	{
+		printf("No grades were entered\n");
+	}
 
 	return 0;
 }
