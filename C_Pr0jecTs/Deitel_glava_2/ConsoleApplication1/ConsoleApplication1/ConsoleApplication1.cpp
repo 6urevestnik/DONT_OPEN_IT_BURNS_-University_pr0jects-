@@ -414,6 +414,21 @@ void glava3_2ex()
 	}
 }
 
+void glava3_3ex()
+{
+	int a = 0;
+	int b = 0;
+
+	printf("Enter number: ");
+	scanf("%d", &a);
+
+	while (b <= a)
+	{
+		printf("%d\n", b);
+		b += 1;
+	}
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
@@ -425,7 +440,7 @@ int main(void)
 
 	printf("\n\n\n");
 
-	glava3_2ex();
+	glava3_3ex();
 
 	return 0;
 }
