@@ -462,9 +462,20 @@ void glava3_5ex()
 			total += grade;
 			counter++;
 		}
+
 	}
-	printf("\nCounter is: %d\nTotal is: %d\n", counter, total);
-	printf("Average is: %d\n\n", total / counter);
+
+	if (counter != 0)
+	{
+		printf("\nCounter is: %d\nTotal is: %d\n", counter, total);
+		printf("Average is: %.2f\n\n", (double)total / counter);
+	}
+
+	else
+	{
+		printf("Error! Division by zero!");
+	}
+
 }
 
 int main(void)
