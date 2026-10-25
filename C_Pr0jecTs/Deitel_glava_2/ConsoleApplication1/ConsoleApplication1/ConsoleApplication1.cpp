@@ -429,18 +429,34 @@ void glava3_3ex()
 	}
 }
 
+void glava3_4ex()
+{
+	int a;
+	int b = 0;
+	int counter = 1;
+
+	printf("Enter numbers: \n");
+
+	while (counter <= 10)
+	{
+		scanf("%d", &a);
+		b += a;
+		counter++;
+	}
+	printf("Counter is: %d\n", counter - 1);
+	printf("Middle arifmetic is: %d", b / counter);
+
+}
+
 int main(void)
 {
 	int a, b, c, result, number;
-
-	printf("ENTER TWO NUMBERSZ: ");
-	printf("NO\n\n");
 
 	exercise_2_31();
 
 	printf("\n\n\n");
 
-	glava3_3ex();
+	glava3_4ex();
 
 	return 0;
 }
