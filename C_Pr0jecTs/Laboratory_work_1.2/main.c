@@ -1,26 +1,26 @@
-#define _CRT_SECURE_NO_WARNINGS												/* Разрешение использовать scanf */
-#include <stdio.h>															/* Подключение стандартных модулей ввода и вывода */
+#define _CRT_SECURE_NO_WARNINGS													/* Разрешение использовать scanf */
+#include <stdio.h>																/* Подключение стандартных модулей ввода и вывода */
 
 /* begin */
-void main(void)																/* Тело программы */
+void main(void)																	/* Тело программы */
 {
 	printf("Laboratory work 1.2\n\n");
 
-	char will_return = 'Y';													/* Переменная для повторения кода программы */
-	while (will_return == 'Y')												/* Цикл для повторения кода программы */
+	char will_repeat = 'Y';														/* Переменная для повторения кода программы */
+	while (will_repeat == 'Y')													/* Цикл для повторения кода программы */
 	{
 		/* Инициализация переменных */
-		int t = 0;															/* Переменная, для подсчёта времени */
+		int t = 0;																/* Переменная, для подсчёта времени */
 		int K = 0;
 		int S = 0;
 		int N = 0;
 		int P = 0;
-		int M = 0;															/* Переменные, для промежуточных вычислений */
+		int M = 0;																/* Переменные, для промежуточных вычислений */
 
 		printf("Enter K ishodnui zapas semyan: ");								/* Ввод K - исходного запаса семян */
 		scanf("%d", &K);
 
-		printf("Enter S ploshyad polya: ");									/* Ввод S - площади поля */
+		printf("Enter S ploshyad polya: ");										/* Ввод S - площади поля */
 		scanf("%d", &S);													
 
 		printf("Enter N norma vyseva: ");										/* Ввод N - нормы высева */
@@ -29,10 +29,12 @@ void main(void)																/* Тело программы */
 		printf("Enter P urozhai za sezon: ");									/* Ввод P - урожай за сезон */
 		scanf("%d", &P);
 
+		M = S * N;																/* Вычисление M - требуемого количества семян для засева всего поля */
+
 		while (K <= M)
-		{
-			M = S * N;														/* Вычисление M - требуемого количества семян для засева всего поля */
-			printf("M is %d", M);
+		{														
+			printf("M is %d\n", M);
+			printf("K is %d\n\n", K);
 
 			if (P > 0)														/* Если P - урожай за сезон < 0, то в итоге поле не будет засеяно */
 			{
@@ -44,9 +46,9 @@ void main(void)																/* Тело программы */
 			}
 		}
 
-		printf("Result is %d\n\n", M);
-		
-
+		printf("Result is: \nM = %d\nK = %d\n\n", M, K);
+		printf("Repeat? Y/N:");
+		scanf(" %c", &will_repeat);
 	}
 
 	return 0;
