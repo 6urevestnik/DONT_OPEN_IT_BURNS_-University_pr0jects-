@@ -129,6 +129,41 @@ void ex_8()
 	}
 }
 
+void ex_9()
+{
+	char c;
+
+	printf("Enter first letter animal name: ");
+	scanf(" %c", &c);
+	printf("\n");;
+
+	switch (c)
+	{
+	case 'a':
+		printf("Alegator\n");
+		break;
+
+	case 'b':
+		printf("Bear\n");
+		break;
+
+	case 'c':
+		printf("Camel\n");
+		break;
+
+	case 'd':
+		printf("Duck\n");
+		break;
+
+	case 'e':
+		printf("Eagle\n");
+		break;
+
+	default:
+		printf("Enter another letter!\n");
+	}
+}
+
 int main(void)
 {
 	char will_repeat = 'Y';
@@ -137,7 +172,7 @@ int main(void)
 
 	while (will_repeat == 'Y')
 	{
-		ex_8();
+		ex_9();
 
 		printf("Will repeat? Y/N: ");
 		scanf(" %c", &will_repeat);
