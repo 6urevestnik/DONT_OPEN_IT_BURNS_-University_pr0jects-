@@ -1,4 +1,4 @@
-# define CRT_MESSAGES_NO_WARNINGS
+# define _CRT_SECURE_NO_WARNINGS
 # include <stdio.h>
 
 void ex_1()
@@ -51,12 +51,30 @@ void ex_5()
 	printf("after:\na is %d\nb is %d\nc is %d\n", a, b, c);
 }
 
+void ex_6()
+{
+	int a, b, max;
+	
+	printf("Enter 2 ints: ");
+	scanf("%d %d", &a, &b);
+
+	if (a > b)
+	{
+		max = a;
+	}
+	else
+	{
+		max = b;
+	}
+
+	printf("Max is %d", max);
+}
 
 int main(void)
 {
 	printf("Hello there!\n");
 
-	ex_5();
+	ex_6();
 
 	return 0;
 }
