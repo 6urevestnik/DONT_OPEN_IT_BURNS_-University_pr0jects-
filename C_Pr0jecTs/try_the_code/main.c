@@ -79,17 +79,28 @@ void ex_7()
 
 	if (a >= 25 && a <= 40)
 	{
-		printf("succes!");
+		printf("succes!\n");
 	}
 	else
-		printf("fail!");
+		printf("fail!\n");
 }
 
 int main(void)
 {
+	char will_repeat = 'Y';
+
 	printf("Hello there!\n");
 
-	ex_7();
+	while (will_repeat == 'Y')
+	{
+		ex_7();
+
+		printf("Will repeat? Y/N: ");
+		scanf(" %c", &will_repeat);
+	}
+
+	printf("Bye!");
+	
 
 	return 0;
 }
