@@ -70,11 +70,26 @@ void ex_6()
 	printf("Max is %d", max);
 }
 
+void ex_7()
+{
+	int a;
+
+	printf("Enter number: ");
+	scanf("%d", &a);
+
+	if (a >= 25 && a <= 40)
+	{
+		printf("succes!");
+	}
+	else
+		printf("fail!");
+}
+
 int main(void)
 {
 	printf("Hello there!\n");
 
-	ex_6();
+	ex_7();
 
 	return 0;
 }
