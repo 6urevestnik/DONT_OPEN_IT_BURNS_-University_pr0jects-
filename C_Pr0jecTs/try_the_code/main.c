@@ -39,12 +39,24 @@ void ex_4()
 	printf("after:\na is %d\nb is %d\nc is %d\n", a, b, c);
 }
 
+void ex_5()
+{
+	int a;
+	int b = 2;
+	int c = 3;
+
+	printf("before:\na is 0\nb is %d\nc is %d\n\n", b, c);
+
+	a = (b += (c = 1)) < b;
+	printf("after:\na is %d\nb is %d\nc is %d\n", a, b, c);
+}
+
 
 int main(void)
 {
 	printf("Hello there!\n");
 
-	ex_4();
+	ex_5();
 
 	return 0;
 }
