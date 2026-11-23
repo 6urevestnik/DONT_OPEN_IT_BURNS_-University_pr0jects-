@@ -85,18 +85,63 @@ void ex_7()
 		printf("fail!\n");
 }
 
+void ex_8()
+{
+	int M, D;
+
+	printf("Enter month number: ");
+	scanf("%d", &M);
+
+	switch (M)
+	{
+	case 2:
+		D = 28;
+		break;
+
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+		D = 30;
+		break;
+
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+		D = 31;
+		break;
+
+	default:
+		D = -1;
+	}
+
+	if (D > 0)
+	{
+		printf("In this month %d days\n", D);
+	}
+	else
+	{
+		printf("WRONG NUMBER STUPID!\n");
+	}
+}
+
 int main(void)
 {
 	char will_repeat = 'Y';
 
-	printf("Hello there!\n");
+	printf("Hello there!\n\n");
 
 	while (will_repeat == 'Y')
 	{
-		ex_7();
+		ex_8();
 
 		printf("Will repeat? Y/N: ");
 		scanf(" %c", &will_repeat);
+		printf("\n");
 	}
 
 	printf("Bye!");
