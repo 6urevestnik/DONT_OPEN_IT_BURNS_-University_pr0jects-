@@ -164,6 +164,24 @@ void ex_9()
 	}
 }
 
+void ex_10()
+{
+	int number;
+
+	printf("Enter number: ");
+	scanf("%d", &number);
+	printf("\n");
+
+	if (number == 0)
+	{
+		printf("Number is equal 0\n");
+	}
+	else
+	{
+		printf("Number is not equal 0\n");
+	}
+}
+
 int main(void)
 {
 	char will_repeat = 'Y';
@@ -172,7 +190,7 @@ int main(void)
 
 	while (will_repeat == 'Y')
 	{
-		ex_9();
+		ex_10();
 
 		printf("Will repeat? Y/N: ");
 		scanf(" %c", &will_repeat);
